@@ -1,0 +1,59 @@
+/* ── Typography ──────────────────────────────────────────────
+   Design target: SF Pro (Apple system face, not freely licensable).
+   On Apple hardware the system stack renders true SF Pro/SF Text.
+   Cross-platform fallback webfont: Onest (Google Fonts) — a clean,
+   neutral modern grotesque chosen for its SF-adjacent proportions. */
+@import url("https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&display=swap");
+
+:root {
+  /* Families */
+  --font-sans: -apple-system, BlinkMacSystemFont, "Onest", "Segoe UI", system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+  /* Numerals — prices always render with tabular figures */
+  --numeric-tabular: tabular-nums; /* @kind other */
+
+  /* Type scale (px) — Apple-leaning, base 17 for app body */
+  --text-2xs: 11px;
+  --text-xs: 12px;
+  --text-sm: 13px;
+  --text-md: 15px;
+  --text-base: 17px;
+  --text-lg: 19px;
+  --text-xl: 21px;
+  --text-2xl: 24px;
+  --text-3xl: 28px;
+  --text-4xl: 34px;
+  --text-5xl: 40px;
+  --text-6xl: 48px;
+  --text-7xl: 56px;
+  --text-display: 72px;
+
+  /* Weights */
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-heavy: 800;
+
+  /* Line heights */
+  --leading-tight: 1.08;
+  --leading-snug: 1.2;
+  --leading-normal: 1.35;
+  --leading-relaxed: 1.55;
+
+  /* Letter spacing — large display gets negative tracking, SF-style */
+  --tracking-tighter: -0.026em;
+  --tracking-tight: -0.018em;
+  --tracking-normal: -0.01em;
+  --tracking-wide: 0.01em;
+  --tracking-caps: 0.06em;
+
+  /* Semantic type roles */
+  --type-display-size: var(--text-display);
+  --type-title-size: var(--text-4xl);
+  --type-heading-size: var(--text-2xl);
+  --type-body-size: var(--text-base);
+  --type-callout-size: var(--text-md);
+  --type-caption-size: var(--text-sm);
+  --type-micro-size: var(--text-xs);
+}

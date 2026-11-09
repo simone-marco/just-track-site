@@ -1,0 +1,103 @@
+/* ── Color ───────────────────────────────────────────────────
+   Apple-style minimal palette. Base ramp + system accents,
+   then semantic aliases. Dark theme via [data-theme="dark"]. */
+:root {
+  /* Absolutes */
+  --white: #ffffff;
+  --black: #000000;
+
+  /* Neutral ramp — Apple grays */
+  --gray-50: #f5f5f7;   /* signature off-white background */
+  --gray-100: #ececee;
+  --gray-200: #e3e3e6;
+  --gray-300: #d2d2d7;  /* hairline border */
+  --gray-400: #aeaeb2;
+  --gray-500: #86868b;  /* tertiary text */
+  --gray-600: #6e6e73;  /* secondary text */
+  --gray-700: #48484a;
+  --gray-800: #2c2c2e;
+  --gray-900: #1d1d1f;  /* primary text */
+
+  /* System accents */
+  --blue: #0071e3;
+  --blue-hover: #0077ed;
+  --blue-press: #006adb;
+  --green: #34c759;
+  --green-strong: #248a3d;
+  --red: #ff3b30;
+  --red-strong: #c4291f;
+  --orange: #ff9500;
+  --orange-strong: #c76f00;
+  --purple: #5e5ce6;
+
+  /* Tinted fills (status backgrounds) */
+  --fill-blue: rgba(0, 113, 227, 0.10);
+  --fill-green: rgba(52, 199, 89, 0.13);
+  --fill-red: rgba(255, 59, 48, 0.12);
+  --fill-orange: rgba(255, 149, 0, 0.14);
+  --fill-neutral: rgba(120, 120, 128, 0.10);
+
+  /* ── Semantic: surfaces ── */
+  --surface-base: var(--white);
+  --surface-subtle: var(--gray-50);
+  --surface-card: var(--white);
+  --surface-raised: var(--white);
+  --surface-inset: var(--gray-50);
+  --surface-overlay: rgba(255, 255, 255, 0.72); /* frosted glass */
+  --scrim: rgba(0, 0, 0, 0.40);
+
+  /* ── Semantic: text ── */
+  --text-primary: var(--gray-900);
+  --text-secondary: var(--gray-600);
+  --text-tertiary: var(--gray-500);
+  --text-on-accent: var(--white);
+  --text-link: var(--blue);
+
+  /* ── Semantic: borders ── */
+  --border-hairline: var(--gray-300);
+  --border-subtle: var(--gray-200);
+  --border-strong: var(--gray-400);
+
+  /* ── Semantic: interactive accent ── */
+  --accent: var(--blue);
+  --accent-hover: var(--blue-hover);
+  --accent-press: var(--blue-press);
+
+  /* ── Price semantics (domain) ── */
+  --price-drop: var(--green);       /* price fell — good time to buy */
+  --price-rise: var(--red);         /* price rose */
+  --price-hold: var(--orange);      /* steady — wait */
+  --price-lowest: var(--green-strong);
+}
+
+[data-theme="dark"] {
+  --surface-base: #000000;
+  --surface-subtle: #1c1c1e;
+  --surface-card: #1c1c1e;
+  --surface-raised: #2c2c2e;
+  --surface-inset: #2c2c2e;
+  --surface-overlay: rgba(28, 28, 30, 0.72);
+  --scrim: rgba(0, 0, 0, 0.60);
+
+  --text-primary: #f5f5f7;
+  --text-secondary: #aeaeb2;
+  --text-tertiary: #8e8e93;
+
+  --border-hairline: #38383a;
+  --border-subtle: #2c2c2e;
+  --border-strong: #48484a;
+
+  --blue: #0a84ff;
+  --blue-hover: #2b95ff;
+  --blue-press: #0a84ff;
+  --green: #30d158;
+  --green-strong: #30d158;
+  --red: #ff453a;
+  --orange: #ff9f0a;
+
+  --fill-blue: rgba(10, 132, 255, 0.18);
+  --fill-green: rgba(48, 209, 88, 0.18);
+  --fill-red: rgba(255, 69, 58, 0.18);
+  --fill-orange: rgba(255, 159, 10, 0.18);
+  --fill-neutral: rgba(120, 120, 128, 0.24);
+}

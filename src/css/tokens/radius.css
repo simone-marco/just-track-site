@@ -1,0 +1,12 @@
+/* ── Radius ──────────────────────────────────────────────────
+   Apple-generous continuous-corner feel. */
+:root {
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 14px;   /* inputs, small buttons */
+  --radius-lg: 18px;   /* cards */
+  --radius-xl: 24px;   /* sheets, large surfaces */
+  --radius-2xl: 32px;
+  --radius-pill: 999px;
+  --radius-circle: 50%;
+}

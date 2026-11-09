@@ -1,0 +1,30 @@
+/* ── Spacing ─────────────────────────────────────────────────
+   4px base grid. Use semantic gutters for layout consistency. */
+:root {
+  --space-0: 0;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 32px;
+  --space-8: 40px;
+  --space-9: 48px;
+  --space-10: 64px;
+  --space-11: 80px;
+  --space-12: 96px;
+
+  /* Semantic gutters */
+  --gutter-screen: var(--space-5);   /* mobile screen side padding */
+  --gutter-card: var(--space-5);     /* card interior padding */
+  --gutter-stack: var(--space-4);    /* default vertical rhythm */
+  --gutter-inline: var(--space-2);   /* icon↔label gap */
+  --gutter-section: var(--space-9);  /* between major sections */
+
+  /* Control sizing */
+  --control-height-sm: 32px;
+  --control-height-md: 40px;
+  --control-height-lg: 48px;
+  --tap-target-min: 44px;            /* never go below */
+}

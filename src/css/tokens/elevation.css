@@ -1,0 +1,27 @@
+/* ── Elevation ───────────────────────────────────────────────
+   Soft, low-opacity Apple shadows. Cards lean on hairline borders
+   + a faint ambient shadow rather than heavy drop shadows. */
+:root {
+  --shadow-none: none;
+  --shadow-xs: 0 1px 1px rgba(0, 0, 0, 0.03);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.045);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.12);
+  --shadow-xl: 0 24px 60px rgba(0, 0, 0, 0.18);
+
+  /* Frosted overlay backdrop blur amount */
+  --blur-overlay: 20px;
+  --blur-thin: 8px;
+
+  /* Focus ring — Apple accessibility blue halo */
+  --ring-focus: 0 0 0 4px rgba(0, 113, 227, 0.35);
+}
+
+[data-theme="dark"] {
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.6);
+  --shadow-xl: 0 24px 60px rgba(0, 0, 0, 0.7);
+  --ring-focus: 0 0 0 4px rgba(10, 132, 255, 0.45);
+}

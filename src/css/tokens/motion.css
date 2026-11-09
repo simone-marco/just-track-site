@@ -1,0 +1,17 @@
+/* ── Motion ──────────────────────────────────────────────────
+   Calm, confident Apple motion. Mostly ease-out fades + gentle
+   scale; one soft spring for delightful confirmations. */
+:root {
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1); /* @kind other */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1); /* @kind other */
+  --ease-in: cubic-bezier(0.4, 0, 1, 1); /* @kind other */
+  --ease-spring: cubic-bezier(0.34, 1.4, 0.5, 1); /* @kind other */
+
+  --duration-fast: 140ms;  /* @kind other */
+  --duration-base: 240ms;  /* @kind other */
+  --duration-slow: 400ms;  /* @kind other */
+
+  /* Interaction tokens */
+  --press-scale: 0.97; /* @kind other */
+  --hover-lift: -1px;      /* subtle raise */
+}

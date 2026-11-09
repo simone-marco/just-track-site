@@ -1,0 +1,6 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Just Track mark">
+  <rect width="120" height="120" rx="27" fill="#1d1d1f"></rect>
+  <path d="M30 44 L52 66 L70 50 L92 76" fill="none" stroke="#34c759" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></path>
+  <circle cx="92" cy="76" r="7.5" fill="#34c759"></circle>
+  <circle cx="92" cy="76" r="13" fill="none" stroke="#34c759" stroke-width="3" opacity="0.35"></circle>
+</svg>
